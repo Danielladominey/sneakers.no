@@ -1,1 +1,0 @@
-let ham = document.getElementById("ham")
