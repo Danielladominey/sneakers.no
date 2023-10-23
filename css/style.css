@@ -16,6 +16,7 @@ body{
 body{
     display: flex;
     flex-direction: column;
+    margin: 0.5rem;
     
 }
 
@@ -41,13 +42,11 @@ header{
 
 .responsive{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     top: 2.5em;
-    list-style: none;
     background-color:#FFF8E7;
     color: #A67B5B;
     text-transform: uppercase;
-    justify-content: space-between;
     padding: 0;
     font-weight: 700;
     height:fit-content;
@@ -64,7 +63,7 @@ header{
 }
 
 .ul-nav-mobile{
-    gap: 5%;
+    justify-content: space-between;
     float: right;
     list-style: none;
     margin: 0%;
@@ -106,7 +105,6 @@ header{
 
 main{ 
     grid-area: main;
-    margin: 0.5rem;
 }
     
 
@@ -128,15 +126,16 @@ main{
     position: absolute;
     color:#A67B5B;
     width: fit-content;
-    padding-inline-start: 18%;
+    padding-inline-start: 20%;
     top: 100px;
     border-radius: 5px;
-    font-size: 35px;
+    font-size: 40px;
+    opacity: 0.5;
 }
 
 .big-container-mobile .text1{
     position: absolute;
-    color: #FFF8E7;
+    color: #A67B5B;
     opacity: 0.5;
     width: 125px;
     right: 20px;
@@ -145,6 +144,29 @@ main{
     text-align: end;
 }
 
+h2{
+    margin: 0;
+    display: flex;
+    padding-top: 10%;
+    color: #A67B5B;
+    font-size: 20px;
+    text-decoration: underline;
+    justify-content: center;
+    font-family: fantasy;
+}
+
+h3{
+    margin: 0;
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    color: #A67B5B;
+    font-size: 20px;
+    text-decoration: underline;
+    justify-content: center;
+    font-family: fantasy;
+    
+}
 
 
 #small-container-mobile{
@@ -177,12 +199,13 @@ main{
     flex-direction: column;
     gap: 10px;
     padding-bottom: 5%;
+   
     
 }
 
 .medium-container-mobile img{
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 
 .container-slider {
@@ -524,6 +547,20 @@ h1{
         justify-content: center;
         flex-direction: row;
         gap: 5%;
+    }
+
+    h2{
+        width: 100%;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    h3{
+        width: 100%;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
     }
     
     .medium-container-mobile img{
@@ -876,6 +913,20 @@ h1{
         flex-wrap: wrap;
         width: 600px;
         height: 600px;
+    }
+
+    h2{
+        width: 100%;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    h3{
+        width: 100%;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
     }
 
     .container-slider {
