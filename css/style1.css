@@ -1,0 +1,48 @@
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 15%
+    
+}
+
+h1{
+    font-size: 25px;
+}
+
+section{
+    padding-bottom: 5%;
+}
+
+.skjermbilde{
+    width: 400px;
+    display: flex;
+   padding-bottom: 5%;
+}
+
+p{
+    padding-bottom: 2%;
+}
+
+.SEO{
+   width:450px;
+   padding-bottom: 5%;
+
+}
+
+.UU1{
+    height: 300px;
+    padding-bottom: 10%;
+}
+
+.UU2{
+    height: 300px;
+    padding-inline: 5%;
+    padding-bottom: 10%;
+}
+
+.forbedringer1{
+    width: 800px;
+}

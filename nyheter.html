@@ -1,13 +1,33 @@
 <!DOCTYPE html> 
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-        <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
-        <title>Nyheter sneakers</title>
+         <!--Basic meta-->
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="description" content="Your Sneaker Store - Find the latest trends in men's, and women's sneakers.">
+         
+          <!--Meta for SEO-->
+         <meta name="keywords" content="sneakers, news, new, popular, sko, nike, limited, ">
+         <meta name="author" content="Sneakers">
+ 
+         <!--Meta for instagram og facebook-->
+         <meta property="og:title" content="News on sneakers.no">
+         <meta property="og:description" content="Find your sneaker news here.">
+         <meta property="og:type" content="website">
+         <meta property="og:url" content="https://itstud.hiof.no/~danielhd/sneakers.no/nyheter.html">
+         <meta property="og:image" content="https://example.com/path/to/image.jpg">
+         <meta property="og:site_name" content="Sneakers.no">
+ 
+         <!---Link rel, script og tittel-->
+         <link rel="stylesheet" href="css/style.css" type="text/css">
+         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+         <script src="https://kit.fontawesome.com/c6b659b1d7.js" crossorigin="anonymous"></script>
+         <title>Nyheter sneakers</title>
     </head>
+
+
     <body>
+        <a href="#maincontent">Skip to main content</a>
         <div id="grid-container">
             <!--Header, nav-->
             <header>
@@ -15,19 +35,21 @@
                     <section class="newsletter-nav">
                         <p>Subscribe to our newsletter for 20% off</p> <button class="newsletter-button">SUBSCRIBE</button>
                     </section>
-                    <a href="#"></a><i id="ham" class="fa-solid fa-bars" style="color: #A67B5B;"></i><a></a>
-                    <a href="index.html" id="logo">S N E A K E R S</a>
+                    <hr>
+                    <a href="#" aria-label="hamburgermeny"></a><i id="ham" class="fa-solid fa-bars" style="color: #191919;"></i></a>
+                    <a href="index.html" aria-label="nettsidens logo" id="logo">SNEAKERS</a>
         
                     <ul class="ul-nav-mobile">
                     <li class="nav-li-mobile">
-                    <a href="nyheter.html"><i class="fa-solid fa-heart" style="color: #A67B5B;;"></i></a>
-                    <a href="#"><i class="fa-solid fa-user" style="color:#A67B5B;"></i></a>
-                    <a href="#"><i class="fa-solid fa-cart-shopping" style="color: #A67B5B;"></i></a>
-                    <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #A67B5B;"></i></a>
+                    <a href="#" aria-label="favoritter"><i class="fa-solid fa-heart" style="color: #191919;"></i></a>
+                    <a href="#" aria-label="mine sider"><i class="fa-solid fa-user" style="color:#191919;"></i></a>
+                    <a href="#" aria-label="handlekurv"><i class="fa-solid fa-cart-shopping" style="color: #191919;"></i></a>
+                    <a href="#" aria-label="søk"><i class="fa-solid fa-magnifying-glass" style="color: #191919;"></i></a>
                         </li>
-                    </ul>    
+                    </ul>   
+                    
+                    <label aria-label="søk her"><input class="search" type="text" placeholder="Search.."></label>
                     <section class="delivery-ul-mobile">
-                        <input class="search" type="text" placeholder="Search..">
                         <ul class="delivery">
                             <li class="delivery-li-mobile">Free shipping</li>
                             <li class="delivery-li-mobile">Express delivery</li>
@@ -36,115 +58,119 @@
                     </section>
                 </nav>
                 <section class="navmenu">
+                    <a href="analyse.html">ANALYSE</a>
                     <a href="index.html">HOME</a>
-                    <a href="nyheter.html">NYHETER</a>
+                    <a href="#">NYHETER</a>
                     <a href="produkt.html">PRODUCT</a>
                 </section>
+                <hr>
             
                 <section class="navbar">
+                    <a href="analyse.html">ANALYSE</a>
                     <a href="index.html">HOME</a>
-                    <a href="nyheter.html">NYHETER</a>
+                    <a href="#">NYHETER</a>
                     <a href="produkt.html">PRODUCT</a>
                 </section>
             </header>
 
 
              <!--Main-->
-             <main>
-                <h1 class="h1-nyheter">NEWS</h1>
+             <main id="maincontent">
+                <h1 role="heading" aria-level="1">NEWS</h1>
 
                 <section class="category-desktop">
-                    <img src="img/CATEGORY.jpg" alt="category">
-                    <img src="img/CATEGORY.jpg" alt="category">
-                    <img src="img/CATEGORY.jpg" alt="category">
-                    
+                    <a href="#" aria-label="kategori"><img src="img/CATEGORY.jpg" alt="kategori"></a>
+                    <a href="#" aria-label="kategori"><img src="img/CATEGORY.jpg" alt="kategori"></a>
+                    <a href="#" aria-label="kategori"><img src="img/CATEGORY.jpg" alt="kategori"></a>
                 </section>
 
-                <section class="filter-news"><p class="text-footer">SORT BY</p>
+                <section class="filter-news">
+                    <h2 aria-level="2">SORT BY</h2>
                     <hr class="footer-hr">
-                    <p class="text-footer">FILTER</p>
+                    <h2 aria-level="2">FILTER</h2>
                     <hr class="footer-hr"> 
                 </section>
 
                
-                <section id="small-container-mobile">
+                <h2 role="heading" aria-level="2">Products</h2>
+                <section id="small-container-mobile" aria-label="Produkter kommer her">
+                    
                     <article>
-                        <img class="small" src="img/bilde5small.jpg" alt=" nike airforce https://unsplash.com/photos/black-white-and-blue-nike-basketball-shoes-3MqhuQljanE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">
-                        <p class="pris-og-navn">NIKE AIRFORCE</p>
-                        <p class="pris-og-navn">1200 KR</p>
-                    </article>
-            
-                    <article>
-                        <img class="small" src="img/bilde4small.jpg" alt="nike sneakers https://unsplash.com/photos/black-and-white-nike-sneakers-on-white-box-2xvROH1XKcA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">
-                        <p class="pris-og-navn">NIKE</p>
-                        <p class="pris-og-navn">1399 KR</p>
-                    </article>
-                   
-                    <article>
-                        <img class="small" src="img/bilde1small.jpg" alt="nike sneakers https://unsplash.com/photos/red-and-white-nike-athletic-shoes-VOpBKo48lq0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"> 
-                        <p class="pris-og-navn">NIKE</p>
-                        <p class="pris-og-navn">1499 KR</p>
-                    </article>
+                         <a href="#"> <img class="small" src="img/bilde5small.jpg" alt="produktfoto sko nike blå, hvite og svarte 1200 kr"></a>
+                         <h3 class="pris-og-navn">NIKE AIRFORCE</h3>
+                         <p class="pris-og-navn">1200 KR</p>
+                     </article>
+             
+                     <article>
+                         <a href="#"><img class="small" src="img/bilde4small.jpg" alt="produktfoto nike sko røde, svarte og hvite 1399 kr"></a>
+                         <h3 class="pris-og-navn">NIKE</h3>
+                         <p class="pris-og-navn">1399 KR</p>
+                     </article>
+                    
+                     <article>
+                         <a href="#"><img class="small" src="img/bilde1small.jpg" alt="produktfoto puma sko røde og hvite 1499 kr"> </a>
+                         <h3 class="pris-og-navn">PUMA</h3>
+                         <p class="pris-og-navn">1499 KR</p>
+                     </article>
+ 
+                     <article>
+                        <a href="#"><img class="small" src="img/bilde2small.jpg" alt="produktfoto nike air max sko orange og hvite 1200 kr"></a>
+                        <h3 class="pris-og-navn"> NIKE AIRFORCE</h3>
+                         <p class="pris-og-navn">1200 KR</p>
+                     </article>
+ 
+                     <article>
+                        <a href="#"><img class="small" src="img/bilde5small.jpg" alt=" produktfoto nike blå og hvite 1200 kr" ></a>
+                        <h3 class="pris-og-navn">NIKE AIRFORCE</h3>
+                         <p class="pris-og-navn">1200 KR</p>
+                     </article>
+             
+                     <article>
+                        <a href="#"><img class="small" src="img/bilde4small.jpg" alt="produktfoto nike limited edition 1399 kr"></a> 
+                        <h3 class="pris-og-navn">NIKE</h3>
+                         <p class="pris-og-navn">1399 KR</p>
+                     </article>
+                    
+                     <article>
+                        <a href="#"><img class="small" src="img/bilde1small.jpg" alt=" produktfoto puma ny modell røde og hvite sko 1499 kr"></a> 
+                        <h3 class="pris-og-navn">PUMA</h3>
+                         <p class="pris-og-navn">1499 KR</p>
+                     </article>
+                 </section>
 
-                    <article>
-                        <img class="small" src="img/bilde2small.jpg" alt="nike sneakers https://unsplash.com/photos/white-and-brown-nike-air-max-pmpo_qS7TmY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">
-                        <p class="pris-og-navn">NIKE AIRFORCE</p>
-                        <p class="pris-og-navn">1200 KR</p>
-                    </article>
-
-                    <article>
-                        <img class="small" src="img/bilde5small.jpg" alt="nike sneakers https://unsplash.com/photos/black-white-and-blue-nike-basketball-shoes-3MqhuQljanE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">
-                        <p class="pris-og-navn">NIKE AIRFORCE</p>
-                        <p class="pris-og-navn">1200 KR</p>
-                    </article>
-            
-                    <article>
-                        <img class="small" src="img/bilde4small.jpg" alt="nike sneakers https://unsplash.com/photos/black-and-white-nike-sneakers-on-white-box-2xvROH1XKcA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">
-                        <p class="pris-og-navn">NIKE</p>
-                        <p class="pris-og-navn">1399 KR</p>
-                    </article>
-                   
-                    <article>
-                        <img class="small" src="img/bilde1small.jpg" alt="sneakers puma https://unsplash.com/photos/red-and-white-nike-athletic-shoes-VOpBKo48lq0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"> 
-                        <p class="pris-og-navn">PUMA</p>
-                        <p class="pris-og-navn">1499 KR</p>
-                    </article>
-
-                </section>
              </main>
 
              <!--Footer-->
             <footer>
-                  <section class="footer-ul2">
-                  <i class="fa-solid fa-fire-flame-curved" style="color: #A67B5B;"></i>
-                  <i class="fa-solid fa-box" style="color: #A67B5B;"></i>
-                  <i class="fa-solid fa-truck-fast" style="color: #A67B5B"></i>
+                <section>
+                    <hr class="footer-hr">
+                    <a href="#">HELP & SUPPORT</a>
+                    <hr class="footer-hr">
+                    <a href="#">ABOUT</a>
+                    <hr class="footer-hr">
+                    <a href="#">MY PAGES</a>
+                    <hr class="footer-hr">
                 </section>
 
-                  <p class="footer-small-text">ALWAYS ON TREND!</p>
-                  <p class="footer-small-text">FREE SHIPPING</p>
-                  <p class="footer-small-text">EXPRESS DELIVERY</p>
-               
-
-                 <section>
-                    <hr class="footer-hr">
-                    <p class="text-footer">HELP & SUPPORT</p>
-                    <hr class="footer-hr">
-                    <p class="text-footer">ABOUT</p>
-                    <hr class="footer-hr">
-                    <p class="text-footer">MY PAGES</p>
-                    <hr class="footer-hr">
-                 </section>
-
-                   <ul class="footer-ul">
-                    <li class="footer-li"> 
-                       <a href="#"><i class="fa-brands fa-facebook" style="color: #A67B5B;"></i></a>
-                       <a href="#"><i class="fa-brands fa-instagram" style="color: #A67B5B;"></i></a>
-                       <a href="#"><i class="fa-brands fa-apple" style="color:#A67B5B;"></i></a>
-                       <a href="#"><i class="fa-brands fa-google-play" style="color:#A67B5B;"></i></a>
-                       </li> 
-                     </ul>
-               </footer>
+                      <section class="footer-ul2">
+                        <a href="#" aria-label="always on trend"><i class="fa-solid fa-fire-flame-curved" style="color: #191919;"></i></a> 
+                        <a href="#" aria-label="free shipping"><i class="fa-solid fa-box" style="color: #191919;"></i></a>
+                        <a href="#" aria-label="express delivery"><i class="fa-solid fa-truck-fast" style="color: #191919;"></i></a> 
+                      </section>
+      
+                        <p class="footer-small-text">ALWAYS ON TREND!</p>
+                        <p class="footer-small-text">FREE SHIPPING</p>
+                        <p class="footer-small-text">EXPRESS DELIVERY</p>
+  
+                     <ul class="footer-ul">
+                      <li class="footer-li"> 
+                         <a href="#" aria-label="facebook"><i class="fa-brands fa-facebook" style="color: #191919;"></i></a>
+                         <a href="#" aria-label="instagram"><i class="fa-brands fa-instagram" style="color: #191919;"></i></a>
+                         <a href="#" aria-label="last ned app på apple"><i class="fa-brands fa-apple" style="color:#191919;"></i></a>
+                         <a href="#" aria-label="last ned app på google play"><i class="fa-brands fa-google-play" style="color:#191919;"></i></a>
+                         </li> 
+                       </ul>
+            </footer>
         </div>
 
         <!--Javascript-->
@@ -168,3 +194,15 @@
     </body>
 
     </html>
+
+    <!--Kilder
+        https://unsplash.com/photos/red-and-white-nike-athletic-shoes-VOpBKo48lq0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+        https://unsplash.com/photos/black-white-and-blue-nike-basketball-shoes-3MqhuQljanE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+        https://unsplash.com/photos/black-and-white-nike-sneakers-on-white-box-2xvROH1XKcA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+        https://unsplash.com/photos/red-and-white-nike-athletic-shoes-VOpBKo48lq0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+        https://unsplash.com/photos/white-and-brown-nike-air-max-pmpo_qS7TmY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+        https://unsplash.com/photos/black-white-and-blue-nike-basketball-shoes-3MqhuQljanE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+        https://unsplash.com/photos/black-and-white-nike-sneakers-on-white-box-2xvROH1XKcA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+        -->
+        
+
